@@ -15,17 +15,17 @@ export default function Home() {
         <div>
             <Container>
                 <Row>
-                    <Col lg={12} sm={12} xs={12}>
+                    <Col lg={12} sm={12} xs={12} className="removePadding">
                         <h1>Home</h1>
                     </Col>
                 </Row>
 
                 <Row>
-                    <Col lg={6} sm={12} xs={12}>
+                    <Col lg={6} sm={12} xs={12} className="removePadding">
                         <CardPickerComp/>
                     </Col>
 
-                    <Col lg={6} sm={12} xs={12}>
+                    <Col lg={6} sm={12} xs={12} className="removePadding">
                         <HomeCarouselComp/>
                     </Col>
                 </Row>

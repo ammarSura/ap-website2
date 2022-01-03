@@ -14,7 +14,7 @@ export default function CardPickerComp() {
     return (
         <Stack className="removePadding">
             <div>
-                <Stack direction="horizontal" gap={5} style={{paddingLeft: "0%"}}>
+                <Stack direction="horizontal" gap={5} className="removePadding">
                     <div onClick={() => setCard(<FlightSearchCardComp/>)}>Book Flight</div>
                     <div onClick={() => setCard(<FlightCheckinCardComp/>)}>Check-in</div>
                     <div onClick={() => setCard(<EditBookingCardComp/>)}>Edit Booking</div>
