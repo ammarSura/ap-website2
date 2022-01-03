@@ -1,5 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import "../App.css";
+import { Container, Row, Col } from "react-bootstrap";
+
+import FlightSearchCardComp from "../components/flight-search-card";
+import HomeCarouselComp from "../components/home-carousel";
+import CardPickerComp from "../components/card-picker";
+
 
 
 export default function Home() {
@@ -7,10 +13,34 @@ export default function Home() {
    
     return (
         <div>
-            Home
-        </div>    
+            <Container>
+                <Row>
+                    <Col lg={12} sm={12} xs={12}>
+                        <h1>Home</h1>
+                    </Col>
+                </Row>
+
+                <Row>
+                    <Col lg={6} sm={12} xs={12}>
+                        <CardPickerComp/>
+                    </Col>
+
+                    <Col lg={6} sm={12} xs={12}>
+                        <HomeCarouselComp/>
+                    </Col>
+                </Row>
+
+                
+            </Container>
+            
+            
+
+        
+        
+        </div>
     );
+
+    
   
   }
   
-//   export default TnC;
