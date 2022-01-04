@@ -8,11 +8,7 @@ export default function FlightSearchCardComp() {
 
     const [ trip, setTrip ] = useState(0);
 
-    function tripHandler() {
-        document.getElementById("one-way").checked = false; 
-        console.log('here');
-        setTrip(0);
-    }
+
 
     function getDetails() {
         const ele = document.getElementsByName('privileges');
@@ -23,11 +19,6 @@ export default function FlightSearchCardComp() {
             }
         }
 
-        
-        
-
-        
-        
         const details = {
             trip: trip,
             from: document.getElementById("from").value,
@@ -40,9 +31,9 @@ export default function FlightSearchCardComp() {
         }
 
         console.log(details);
-        
 
-        // 
+        window.location.href="/flight-results";
+    
     }
 
    
@@ -81,7 +72,6 @@ export default function FlightSearchCardComp() {
                     <Row >
                         <Col lg={6} xs={12} sm={6} >
                             <Row>
-        
                                 <Col lg={12}xs={12} sm={12}>
                                     <input type="text" placeholder="From" id="from" />
                                 </Col>
@@ -143,28 +133,14 @@ export default function FlightSearchCardComp() {
 
                     <Row>
 
-                        <Col lg={6} sm={6} xs={6}>
-                            <input type="radio" name="privileges" id="army" value="army"/>
-                            <label htmlFor="army">Armed Forces</label>
+                        <Col lg={12} sm={12} xs={12}>
+                            <select placeholder="Class" id="class">
+                                <option value="Economy">Economy</option>
+                                <option value="Business">Business</option>
+                                <option value="First">First Class</option>
+                            </select>
                         </Col>
 
-                        <Col lg={6} sm={6} xs={6}>
-                            <input type="radio" name="privileges" id="student" value="student"/>
-                            <label htmlFor="student">Student</label>
-                        </Col>
-                    </Row>
-
-                    <Row>
-
-                        <Col lg={6} sm={6} xs={6}>
-                            <input type="radio" name="privileges" id="medical" value="medical"/>
-                            <label htmlFor="medical">Medical Workers</label>
-                        </Col>
-
-                        <Col lg={6} sm={6} xs={6}>
-                            <input type="radio" name="privileges" id="ltc" value="ltc"/>
-                            <label htmlFor="ltc">LTC</label>
-                        </Col>
                     </Row>
 
                     <Row>

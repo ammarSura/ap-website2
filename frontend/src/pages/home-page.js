@@ -2,7 +2,6 @@ import React from "react";
 import "../App.css";
 import { Container, Row, Col } from "react-bootstrap";
 
-import FlightSearchCardComp from "../components/flight-search-card";
 import HomeCarouselComp from "../components/home-carousel";
 import CardPickerComp from "../components/card-picker";
 
