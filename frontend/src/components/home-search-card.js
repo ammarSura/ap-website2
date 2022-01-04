@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 
 
-export default function FlightSearchCardComp() {
+export default function HomeSearchCardComp() {
 
     const [ trip, setTrip ] = useState(0);
 
@@ -38,7 +38,7 @@ export default function FlightSearchCardComp() {
 
    
     return (
-        <Container fluid className="removePadding">
+        <Container fluid className="home-card-container">
            
             <Row>
                 <Col lg={12} xs={12} sm={12}>

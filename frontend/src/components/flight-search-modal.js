@@ -1,11 +1,12 @@
 import React from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import "../App.css";
 
 export default function FligthSearchModalComp(props) {
-    // const [show, setShow] = useState(false);
   
     const handleClose = () => props.setShow(false);
+
+    
     
     return (
         
@@ -16,17 +17,22 @@ export default function FligthSearchModalComp(props) {
           keyboard={false}
         >
           <Modal.Header closeButton>
-            <Modal.Title>Modal title</Modal.Title>
+            <Modal.Title>Important information</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            I will not close if you click outside me. Don't even try to press
-            escape key.
+            {/* <h3>
+              Guidelines for visa
+            </h3> */}
+
+            <h3>
+              Guidelines for covid
+            </h3>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <button onClick={handleClose}>
               Close
-            </Button>
-            <Button variant="primary">Understood</Button>
+            </button>
+            <button onClick={() => window.location.href="/booking"}>Okay</button>
           </Modal.Footer>
         </Modal>
     );

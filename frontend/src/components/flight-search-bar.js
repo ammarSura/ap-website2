@@ -9,7 +9,7 @@ export default function FlightSearchBarComp() {
 
    
     return (
-        <Container>
+        <Container className="removePadding">
             <Row>
                 <Col lg={6} sm={6} xs={6}>
                     <input type="radio" name="trip" id="one-way" value="one-way"  onClick={() => setTrip(0)} defaultChecked/>
@@ -24,11 +24,11 @@ export default function FlightSearchBarComp() {
 
             <Row>
                 <Col lg={2} sm={6} xs={12}>
-                    <input type="text" placeholder="From" id="from" />
+                    <input type="text" placeholder="From" id="from" size="16"/>
                 </Col>
 
                 <Col lg={2} sm={6} xs={12}>
-                    <input type="text" placeholder="To" id="to" />
+                    <input type="text" placeholder="To" id="to" size="16"/>
                 </Col>
 
                 <Col lg={2} sm={6} xs={12}>
@@ -44,11 +44,11 @@ export default function FlightSearchBarComp() {
                 </Col>
 
                 <Col lg={2} sm={6} xs={12}>
-                    <input type="text"placeholder="Passengers" id="passengers"/>
+                    <input type="text"placeholder="Passengers" id="passengers" size="16"/>
                 </Col>
 
                 <Col lg={2} sm={6} xs={12}>
-                    <input type="text"placeholder="Pay in (Currency)" id="currency"/>
+                    <input type="text"placeholder="Pay in (Currency)" id="currency" size="16"/>
                 </Col>
             </Row>
 

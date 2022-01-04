@@ -4,13 +4,13 @@ import { Container, Row, Col } from "react-bootstrap";
 
 
 
-export default function EditBookingCardComp() {
+export default function HomeEditBookingCardComp() {
 
     
 
    
     return (
-        <Container fluid className="removePadding">
+        <Container fluid className="home-card-container">
            
             <Row>
                 <Col lg={12} sm={12} xs={12}>

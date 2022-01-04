@@ -1,6 +1,42 @@
-.removePadding {
+.home-container {
     padding-left: 0%;
     padding-right: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.booking-container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.booking-container .container {
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.home-card-container {
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 5%;
+}
+
+.flight-result-stack {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.flight-result-stack .container {
+    padding-left: 0%;
+    padding-right: 0%;    
+}
+
+.booking-card-picker div {
+    border: solid;
 }
 
 .home-carousel-img {
