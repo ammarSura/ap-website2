@@ -8,7 +8,7 @@ export default function BookingDetailsHeaderComp() {
 
     
     return (
-        <Container>
+        <Container fluid className="booking-details-header">
             <Row>
                 <Col sm={4} xs={12}>
                     <Row>
