@@ -1,13 +1,24 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { propTypes } from "react-bootstrap/esm/Image";
 import "../App.css";
 import FligthSearchModalComp from "./flight-search-modal";
 
 
 
-export default function FlightSearchFooterComp() {
+export default function FlightSearchFooterComp(props) {
 
     const [ show, setShow ] = useState(false);
+
+    function showernotagrower(truth) {
+        setShow(truth);
+    }
+
+    function handleBook(setShow) {
+        console.log('asdsa')
+        props.getSelection();
+        setShow(true);
+    }
    
     return (
         <div>
@@ -20,7 +31,7 @@ export default function FlightSearchFooterComp() {
                 </Col>
 
                 <Col>
-                    <button onClick={() => setShow(true)}>Book Now</button>
+                    <button onClick={() => handleBook(setShow)}>Book Now</button>
                 </Col>
             </Row>
         </Container>

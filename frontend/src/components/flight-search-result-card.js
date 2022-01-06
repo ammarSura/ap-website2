@@ -1,17 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import "../App.css";
 
 
 export default function FlightSearchResultCardComp(props) {
 
-
    
     return (
             <Row>
                 <Col lg={3} sm={3} xs={3}>
                     <p>
-                        {props.time}
+                       {props.time}
                     </p>
                 </Col>
 
@@ -28,7 +27,7 @@ export default function FlightSearchResultCardComp(props) {
                 </Col>
 
                 <Col lg={3} sm={3} xs={3}>
-                    <input type="radio" name="fare" id="fare"/>
+                    <input type="radio" name="fare" id={ props.flight_number}/>
                     <label htmlFor="fare">{props.fare}</label>
                 </Col>
 
