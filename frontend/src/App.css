@@ -5,6 +5,35 @@
     margin-right: 5%;
 }
 
+.home-card-container {
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 5%;
+}
+
+.home-carousel-img {
+    width: 100%;
+}
+
+.flight-result-stack {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.flight-result-stack .container {
+    padding-left: 0%;
+    padding-right: 0%;    
+}
+
+
+.flight-result-footer {
+    position: fixed;
+    bottom: 0;
+}
+
+
 .booking-container {
     margin-left: 5%;
     margin-right: 5%;
@@ -28,29 +57,44 @@
     border: solid;
 }
 
-.home-card-container {
-    padding-left: 0%;
-    padding-right: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 5%;
+.booking-seat-input {
+    position: absolute;
+    opacity: 0%;
 }
 
-.flight-result-stack {
-    margin-left: 5%;
-    margin-right: 5%;
+.booking-seat-label1 {
+    background-color: #bbd7fc; 
+    border: solid; 
+    border-width: 0.15em;
+    border-color: grey;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 25% 25% ;
+    font-size: 0.9em;
 }
 
-.flight-result-stack .container {
-    padding-left: 0%;
-    padding-right: 0%;    
+.booking-seat-label2 {
+    background-color: #bbd7fc; 
+    border: solid; 
+    border-width: 0.15em;
+    border-color: grey;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 25% 25% ;
+    font-size: 0.9em;
 }
 
-.home-carousel-img {
-    width: 100%;
+.booking-seat-label1:hover {
+    cursor: pointer;
 }
 
-.flight-result-footer {
-    position: fixed;
-    bottom: 0;
+.booking-seat-label2:hover {
+    cursor: no-drop;
 }
+
+.booking-seat-input:checked + .booking-seat-label1 {
+    background-color: red;
+}
+
+
+

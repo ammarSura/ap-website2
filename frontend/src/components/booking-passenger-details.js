@@ -18,7 +18,6 @@ export default function BookingPassengerDetailsComp(props) {
             helper.push(i)
         }
 
-        console.log(helper)
 
         const lst = helper.map( (passenger) => {
 

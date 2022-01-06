@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import "../App.css";
 import {  } from "react-bootstrap";
 
+import BookingSeatMapComp from "./booking-seat-map";
+
 
 
 export default function BookingSelectSeatComp(props) {
 
     if ( props.card === 3) {
-        console.log('here')
         return (
             <div>
-                <p>Select Seat</p>
+                <BookingSeatMapComp/>
             </div>
             
              
