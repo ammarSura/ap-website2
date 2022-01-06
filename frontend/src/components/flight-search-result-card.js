@@ -28,9 +28,8 @@ export default function FlightSearchResultCardComp(props) {
                 </Col>
 
                 <Col lg={3} sm={3} xs={3}>
-                    <p>
-                        {props.fare}  
-                    </p>
+                    <input type="radio" name="fare" id="fare"/>
+                    <label htmlFor="fare">{props.fare}</label>
                 </Col>
 
                 

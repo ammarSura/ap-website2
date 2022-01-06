@@ -45,14 +45,14 @@ export default function HomeCardPickerComp() {
                 <BookingSelectSeatComp card={card} className="booking-card-picker"/>
             </div>
 
-            <div onClick={() => setCard(4)}>
+            <div onClick={() => setCard(4)} className="booking-card-picker">
                 <h3>
                     Payment
                 </h3>
             </div>
 
             <div>
-                <BookingPaymentComp card={card}/>
+                <BookingPaymentComp card={card} className="booking-card-picker"/>
             </div>
             
         </Stack>
