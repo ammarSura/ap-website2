@@ -1,6 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "../App.css";
 import { Container, Row, Col } from "react-bootstrap";
+import PopoverComp from './popover';
+import HomeSearchClassesComp from "./home-search-classes";
+import HomeSearchCurrComp from "./home-search-curr";
+import HomeSearchPassengersComp from "./home-search-passengers";
+import HomeSearchDestComp from "./home-search-dest";
 
 
 
@@ -11,13 +16,13 @@ export default function HomeSearchCardComp() {
 
 
     function getDetails() {
-        const ele = document.getElementsByName('privileges');
-        var privilege = "None";
-        for (let i = 0; i < ele.length; i++) {
-            if (ele[i].checked) {
-                privilege = ele[i].value;
-            }
-        }
+        // const ele = document.getElementsByName('privileges');
+        // var privilege = "None";
+        // for (let i = 0; i < ele.length; i++) {
+        //     if (ele[i].checked) {
+        //         privilege = ele[i].value;
+        //     }
+        // }
 
         const details = {
             trip: trip,
@@ -27,10 +32,11 @@ export default function HomeSearchCardComp() {
             retDate: document.getElementById("ret-date").value,
             passengers: document.getElementById("passengers").value,
             currency: document.getElementById("currency").value,
-            privilege: privilege,
+            class: document.getElementById("classes").value,
         }
+        console.log(details)
 
-        console.log(details);
+        // console.log(document.getElementById("passengers"));
 
         window.location.href="/flight-results";
     
@@ -44,15 +50,15 @@ export default function HomeSearchCardComp() {
                 <Col lg={12} xs={12} sm={12}>
                     <Row>
                         <Col lg={6} xs={12} sm={6}>
-                            <h3>Book a Flight</h3>
+                            <h3 ><b>Book a Flight</b></h3>
                         </Col>
                     </Row>
                     <Row >
                         <Col lg={6} xs={6} sm={6}>
                             <Row >
                                 <Col >
-                                    <input type="radio" name="trip" id="one-way" value="one-way"  onClick={() => setTrip(0)} defaultChecked/>
-                                    <label htmlFor="one-way">One-Way</label>
+                                    <input className="home-search-radio"type="radio" name="trip" id="one-way" value="one-way"  onClick={() => setTrip(0)} defaultChecked/>
+                                    <label className="home-search-radio-label" htmlFor="one-way">One-Way</label>
                                 </Col>
 
                             </Row>
@@ -61,8 +67,8 @@ export default function HomeSearchCardComp() {
                         <Col lg={6} xs={6} sm={6}>
                             <Row >
                                 <Col >
-                                    <input type="radio" name="trip" id="round-trip" value="one-way" onChange={() => setTrip(1)} />
-                                    <label htmlFor="round-trip" >Round Trip</label>
+                                    <input className="home-search-radio"type="radio" name="trip" id="round-trip" value="one-way" onChange={() => setTrip(1)} />
+                                    <label className="home-search-radio-label" htmlFor="round-trip" >Round Trip</label>
                                 </Col>
                             </Row>
                         </Col>
@@ -73,7 +79,8 @@ export default function HomeSearchCardComp() {
                         <Col lg={6} xs={12} sm={6} >
                             <Row>
                                 <Col lg={12}xs={12} sm={12}>
-                                    <input type="text" placeholder="From" id="from" />
+                                   
+                                    <HomeSearchDestComp type="from" placeholder="From"/>
                                 </Col>
                             </Row>
                             
@@ -82,7 +89,8 @@ export default function HomeSearchCardComp() {
                         <Col lg={6} xs={12} sm={6}>
                             <Row >
                                 <Col lg={12}xs={12}sm={12}>
-                                    <input type="text" placeholder="To" id="to"/>
+                                    
+                                    <HomeSearchDestComp type="to" placeholder="To"/>
                                 </Col>
                             </Row>
                         </Col>
@@ -95,7 +103,7 @@ export default function HomeSearchCardComp() {
                                 
 
                                 <Col lg={12}xs={12}sm={12}>
-                                    <input type="date" min="2022-01-03" max="2023-01-30" placeholder="Departure Date" id="dep-date"/>
+                                    <input className="home-search-input" type="date" min="2022-01-03" max="2023-01-30" placeholder="Departure Date" id="dep-date"/>
                                 </Col>
                             </Row>
                             
@@ -107,9 +115,9 @@ export default function HomeSearchCardComp() {
 
                                 <Col lg={12}xs={12}sm={12}>
                                     {(trip===0) ? 
-                                        <input type="date" min="2022-01-03" max="2023-01-30"placeholder="Return Date" id="ret-date"disabled/> 
+                                        <input className="home-search-input" type="date" min="2022-01-03" max="2023-01-30"placeholder="Return Date" id="ret-date"disabled/> 
                                         :
-                                        <input type="date" min="2022-01-03" max="2023-01-30"placeholder="Return Date" id="ret-date" />  
+                                        <input className="home-search-input" type="date" min="2022-01-03" max="2023-01-30"placeholder="Return Date" id="ret-date" />  
                                     }
                                     
                                 </Col>
@@ -121,11 +129,13 @@ export default function HomeSearchCardComp() {
                     <Row >
 
                         <Col lg={6} xs={12}sm={6}>
-                            <input type="text"placeholder="Passengers" id="passengers"/>
+                            
+                            <HomeSearchPassengersComp/>
                         </Col>
 
                         <Col lg={6} xs={12}sm={6}>
-                            <input type="text"placeholder="Pay in (Currency)" id="currency"/>
+                            
+                            <HomeSearchCurrComp/>
                         </Col>
 
                     </Row>
@@ -133,21 +143,23 @@ export default function HomeSearchCardComp() {
 
                     <Row>
 
-                        <Col lg={12} sm={12} xs={12}>
-                            <select placeholder="Class" id="class">
-                                <option value="Economy">Economy</option>
-                                <option value="Business">Business</option>
-                                <option value="First">First Class</option>
-                            </select>
+                        <Col lg={6} sm={6} xs={12} >
+                        
+                            <HomeSearchClassesComp/>
+                             
+                        </Col>
+
+                        <Col lg={6} sm={6} xs={12}>
+                            <button onClick={ () => getDetails() } className="home-search-btn">Search Flight</button>
                         </Col>
 
                     </Row>
 
-                    <Row>
+                    {/* <Row>
                         <Col lg={12} sm={12} xs={12}>
-                            <button onClick={ () => getDetails() }>Search Flight</button>
+                            <button onClick={ () => getDetails() } className="home-search-btn">Search Flight</button>
                         </Col>
-                    </Row>
+                    </Row> */}
                 </Col>
 
             </Row>

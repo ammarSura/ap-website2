@@ -14,10 +14,10 @@ export default function HomeCardPickerComp() {
     const [ card, setCard ] = useState(1);
 
     return (
-        <Stack>
-            <div onClick={() => setCard(1)} className="booking-card-picker">
+        <Stack gap={2}>
+            <div onClick={() => setCard(1)} className={card===1? "booking-card-picker-purp" : "booking-card-picker"}>
                 <h3>
-                    Passenger Details
+                    <b>Passenger Details</b>
                 </h3>
             </div>
 
@@ -25,9 +25,9 @@ export default function HomeCardPickerComp() {
                 <BookingPassengerDetailsComp card={card}/>
             </div>
             
-            <div onClick={() => setCard(2)} className="booking-card-picker">
+            <div onClick={() => setCard(2)} className={card===2? "booking-card-picker-purp" : "booking-card-picker"}>
                 <h3>
-                    Add-Ons
+                    <b>Add-Ons</b>
                 </h3>
             </div>
 
@@ -35,9 +35,9 @@ export default function HomeCardPickerComp() {
                 <BookingAddonsComp card={card}/>
             </div>
 
-            <div onClick={() => setCard(3)} className="booking-card-picker">
+            <div onClick={() => setCard(3)} className={card===3? "booking-card-picker-purp" : "booking-card-picker"}>
                 <h3>
-                    Select Seat
+                    <b>Select Seat</b>
                 </h3>
             </div>
 
@@ -45,9 +45,9 @@ export default function HomeCardPickerComp() {
                 <BookingSelectSeatComp card={card} className="booking-card-picker"/>
             </div>
 
-            <div onClick={() => setCard(4)} className="booking-card-picker">
+            <div onClick={() => setCard(4)} className={card===4? "booking-card-picker-purp" : "booking-card-picker"}>
                 <h3>
-                    Payment
+                    <b>Payment</b>
                 </h3>
             </div>
 

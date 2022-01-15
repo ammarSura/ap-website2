@@ -32,7 +32,7 @@ export default function BookingPassengerDetailsComp(props) {
 
     if ( props.card === 1) {
         return (
-            <Stack>
+            <Stack gap={1}>
                 {passengerDisplay()}
             </Stack>
             

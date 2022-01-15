@@ -10,11 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@popperjs/core": "^2.11.2",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.6",
     "expres": "0.0.5",
     "express": "^4.17.2",
     "express-session": "^1.17.2",
+    "fuse.js": "^6.5.3",
     "google-auth-library": "^7.11.0",
     "mongoose": "^6.1.4",
     "parser": "^0.1.4",

@@ -1,0 +1,162 @@
+[
+    {
+        "flight_number": "SE5000",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "DEL",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE6000",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "BLR",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE5001",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "DEL",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE6001",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "BLR",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE5002",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "DEL",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE6002",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "BLR",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE5003",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "DEL",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE6003",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "BLR",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE5004",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "DEL",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE6004",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "BLR",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE5005",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "DEL",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE6005",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "BLR",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE5006",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "DEL",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE6006",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "BLR",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE5007",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "DEL",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE6007",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "BLR",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE5008",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "DEL",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE6008",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "BLR",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE5009",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "DEL",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    },
+    {
+        "flight_number": "SE6009",
+        "plane_type": "Airbus A320",
+        "from": "BOM",
+        "to": "BLR",
+        "start_time": "January 21, 2022 13:00:00",
+        "end_time": "January 21, 2022 14:30:00"
+    }
+]

@@ -11,12 +11,237 @@
     margin-left: 0%;
     margin-right: 0%;
     margin-top: 5%;
+    border: solid;
+    border-color: #9842f5;
+    padding: 0.5em;
+    border-radius: 0.5em;
 }
 
+.home-card-button1 {
+    border: solid;
+    border-radius: 5px;
+    border-width: 0.15em;
+    border-color: #9842f5;
+    width: 9em;
+    text-align: center;
+    cursor: pointer;
+    background-color: #9842f5;
+    color: white;
+    font-weight: bold;
+}
+
+.home-card-button2 {
+    border: solid;
+    border-radius: 5px;
+    border-width: 0.15em;
+    border-color: #9842f5;
+    width: 9em;
+    text-align: center;
+    cursor: pointer;
+    color: #6d6b6e;
+    background-color: white;
+    font-weight: bold;
+}
+
+.home-search-input {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.15em;
+    border: none;
+    border-bottom: solid;
+    border-color: grey;
+    border-width: 0.15em;
+    margin-bottom: 10px;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.home-search-input:focus {
+    background-color: #f0f5fc;
+}
+
+.home-search-radio-label {
+    
+    color: #3f3f40;
+    margin-left: 1em;
+    font-size: 1.2em;
+}
+
+.home-search-select {
+    background-color: #fff;
+    border: solid;
+    position: absolute; 
+    top: 0.4em; 
+    width: 100%; 
+    height: 5em; 
+    z-index: 1;
+    font-size: 1.2em;
+    border-color: #9842f5;
+    border-width: 0.2em;
+    overflow: scroll;
+    /* padding-top: 0.5em; */
+    border-radius: 0.4em;
+    /* padding-top: -10em; */
+}
+.home-search-select2 {
+    background-color: #fff;
+    border: solid;
+    position: absolute; 
+    top: 0.4em; 
+    width: 100%; 
+    height: 5.6em; 
+    z-index: 1;
+    font-size: 1.2em;
+    border-color: #9842f5;
+    border-width: 0.2em;
+    overflow: scroll;
+    /* padding-top: 0.5em; */
+    border-radius: 0.4em;
+    /* padding-top: -10em; */
+}
+
+.home-search-pass-btn {
+    border: solid;
+    border-color: #9842f5;
+    background-color: #fff;
+    color: #9842f5;
+    font-size: 0.8em;
+    width: 2em;
+    height: 2em;
+    /* padding-top: 0.2em; */
+    /* margin-bottom: 1em; */
+}
+
+.home-search-pass-pads {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.home-search-pass-nums {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+/* .home-search-boxes {
+    background-color: #fff;
+    border: solid;
+    border-color: #fff;
+    padding-top: -4em;
+} */
+
+.home-search-select1 {
+    background-color: white;
+    border: solid;
+    position: absolute; 
+    bottom: 3.2em; 
+    width: 100%; 
+    height: 5em; 
+    z-index: 1;
+    font-size: 1.2em;
+    border-color: #9842f5;
+    border-width: 0.2em;
+    overflow: scroll;
+    padding-top: 0.5em;
+    border-radius: 0.4em;
+}
+
+.square1 {
+    position: absolute;
+    bottom: 3.4em;
+    left: 3em;
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    border-top: solid;
+    border-left: solid;
+    border-color: #9842f5;
+    border-width: 0.2em;
+    transform: rotate(-135deg);
+    z-index: 2;
+    /* border-radius: 2px; */
+}
+
+.square {
+    position: absolute;
+    top: 0.1em;
+    left: 3em;
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    border-top: solid;
+    border-left: solid;
+    border-color: #9842f5;
+    border-width: 0.2em;
+    transform: rotate(45deg);
+    z-index: 2;
+    /* border-radius: 2px; */
+}
+
+.home-search-radio {
+    width: 1.2em;
+    height: 1.2em;
+    border: none;
+}
+
+.home-search-radio:checked+label {
+    font-weight: bold;
+}
+
+.home-search-btn {
+    background-color: #9842f5;
+    color: #fff;
+    border-radius: 5px;
+    border: transparent;
+    width: 100%;
+    font-size: 1.2em;
+    height: 2em;
+    font-weight: bold;
+}
 .home-carousel-img {
     width: 100%;
 }
 
+.flight-result-search-border {
+    border: solid;
+    border-color: #9842f5;
+   
+    border-radius: 5px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+}
+
+.flight-result-border {
+    border: solid;
+    border-color: #9842f5;
+   
+    border-radius: 5px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 5em;
+    /* background-color: #eeeef0; */
+}
+
+.flight-result-search-rows {
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+
+.flight-result-rows {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    background-color: #fff;
+    border-bottom: solid;
+    border-color: #91a3c9;
+    /* font-size: 1.2em; */
+    /* border: solid; */
+}
 .flight-result-stack {
     margin-left: 5%;
     margin-right: 5%;
@@ -27,14 +252,36 @@
     padding-right: 0%;    
 }
 
+.flight-result-row-font {
+    font-size: 1.2em;
+}
+
 
 .flight-result-footer {
     position: fixed;
     bottom: 0;
-    background-color: #fff;
-    border:solid;
+    border: solid;
+    border-color: #9842f5;
+    border-left: none;
+    border-top: none;
+    background-color: #f6f2fa;
+    box-shadow: inset 0em 0.25em 0.25em -0.25em #9842f5;
+    height: 5em;
+    border-radius: 5px;
+    /* width: 100%; */
+    /* border: solid; */
+    /* padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0; */
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
-
+.flight-result-book-btn {
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
 
 .booking-container {
     margin-left: 5%;
@@ -53,11 +300,69 @@
     padding-right: 0%; */
     margin-left: 0%;
     margin-right: 0%;
+
 }
 
 .booking-card-picker {
     border: solid;
+    border-color: grey;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius:5px;
+    
 }
+
+.booking-card-picker-purp {
+    border: solid;
+    border-color: #9842f5;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #9842f5;
+    border-radius:5px;
+    
+}
+
+.booking-pass-row {
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
+}
+
+.plane-end {
+   background-color: #fff;
+   border: solid;
+   height: 10em;
+   width: 20.75em;
+   /* border-top: transparent; */
+   border-bottom-left-radius: 15em;  
+   border-bottom-right-radius: 15em; 
+}
+
+.plane-front {
+
+    background-color: #fff;
+    border: solid;
+    height: 10em;
+    width: 20.75em;
+    border-top: solid;
+    border-top-left-radius: 200em;  
+    border-top-right-radius: 200em; 
+
+
+}
+
+.seat-map {
+    z-index: 4;
+}
+.booking-card-high {
+    border: solid;
+    border-color: #9842f5;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-width: 0.25em;
+    border-radius: 5px;
+}
+
 
 .booking-seat-input {
     position: absolute;

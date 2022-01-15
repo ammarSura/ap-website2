@@ -52,20 +52,20 @@ export default function BookingSeatMapComp(props) {
 
                 if (row===1 ||  row===11 || row===12) {
                     return (
-                        <>
-                        <Row>
+                        <div key={row}>
+                        <Row >
                             <Col>
                                 <p>
                                     exit
                                 </p>
                             </Col>
                         </Row>
-                        <Row key={row}>
+                        <Row >
                             <BookingSeatComp seat={row + "A"} addSeat={addSeat} maxed={maxed}/>
                             <BookingSeatComp seat={row + "B"} addSeat={addSeat} maxed={maxed}/>
                             <BookingSeatComp seat={row + "C"} addSeat={addSeat} maxed={maxed}/>
                         </Row>
-                        </>
+                        </div>
                         
                     );  
                 } 
@@ -85,7 +85,7 @@ export default function BookingSeatMapComp(props) {
             var lst = helper.map( (row) => {
                 if (row===1 ||  row===11 || row===12) {
                     return (
-                        <>
+                        <div key = {row}>
                             <Row>
                                 <Col>
                                     <p>
@@ -99,7 +99,7 @@ export default function BookingSeatMapComp(props) {
                             <BookingSeatComp seat={row + "E"} addSeat={addSeat} maxed={maxed}/>
                             <BookingSeatComp seat={row + "F"} addSeat={addSeat} maxed={maxed}/>
                             </Row>
-                        </>
+                        </div>
                     );
                     
 
@@ -136,7 +136,16 @@ export default function BookingSeatMapComp(props) {
     })
         
     return (
-        <Container fluid style={{border:"solid", height: "35em", width:"25em", overflowY: "scroll"}}>
+        <div >
+        <Container fluid style={{border:"solid", height: "35em", width:"25em", overflowY: "scroll", }}>
+            <Row>
+                <Col sm={6} xs={6}>
+                <div className="plane-front">
+                    n
+                </div>
+                </Col>
+                
+            </Row>
             <Row>
                 <Col sm={6} xs={6}>
                     {seatDisplayer(1)}
@@ -146,8 +155,21 @@ export default function BookingSeatMapComp(props) {
                     {seatDisplayer(2)}
                 </Col>
             </Row>
+
+            <Row>
+                <Col sm={6} xs={6}>
+                <div >
+                    <img src="https://res.cloudinary.com/dejzdjexf/image/upload/v1642226608/Mediamodifier-Design_1_jhjazd.svg" style={{width: "100em"}}/>
+                </div>
+                </Col>
+                
+            </Row>
             
         </Container>
+        
+
+        </div>
+       
     );
 }
                 

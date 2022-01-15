@@ -9,20 +9,32 @@ import HomeEditBookingCardComp from "./home-edit-booking-card";
 
 export default function HomeCardPickerComp() {
 
-    const [ card, setCard ] = useState(<HomeSearchCardComp/>);
+    const [ card, setCard ] = useState(0);
+    const lst = [<HomeSearchCardComp/>, <HomeCheckinCardComp/>, <HomeEditBookingCardComp/>];
+
+    // function changeState(x) {
+    //     if (x === 0) {
+    //         setCard(0);
+    //     } else if (x === 1) {
+    //         setCard(<HomeCheckinCardComp/>);
+    //     } else {
+    //         setCard(<HomeEditBookingCardComp/>);
+    //     }
+    // }
+
 
     return (
         <Stack className="removePadding">
             <div>
                 <Stack direction="horizontal" gap={5} className="removePadding">
-                    <div onClick={() => setCard(<HomeSearchCardComp/>)}>Book Flight</div>
-                    <div onClick={() => setCard(<HomeCheckinCardComp/>)}>Check-in</div>
-                    <div onClick={() => setCard(<HomeEditBookingCardComp/>)}>Edit Booking</div>
+                    <div  className={card===0? "home-card-button1": "home-card-button2"}onClick={() => setCard(0)}>Book Flight</div>
+                    <div className={card===1? "home-card-button1": "home-card-button2"}onClick={() => setCard(1)}>Check-in</div>
+                    <div className={card===2? "home-card-button1": "home-card-button2"}onClick={() => setCard(2)}>Edit Booking</div>
                 </Stack>
             </div>
 
             <div>
-                {card}
+                {lst[card]}
             </div>
         </Stack>
         

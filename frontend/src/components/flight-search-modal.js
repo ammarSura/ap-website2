@@ -29,10 +29,10 @@ export default function FligthSearchModalComp(props) {
             </h3>
           </Modal.Body>
           <Modal.Footer>
-            <button onClick={handleClose}>
+            <button className="home-search-btn"onClick={handleClose}>
               Close
             </button>
-            <button onClick={() => window.location.href="/booking"}>Okay</button>
+            <button className="home-search-btn"onClick={() => window.location.href="/booking"}>Okay</button>
           </Modal.Footer>
         </Modal>
     );

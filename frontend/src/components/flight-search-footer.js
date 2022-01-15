@@ -14,6 +14,8 @@ export default function FlightSearchFooterComp(props) {
         setShow(truth);
     }
 
+    
+
     function handleBook(setShow) {
         console.log('asdsa')
         props.getSelection();
@@ -26,12 +28,12 @@ export default function FlightSearchFooterComp(props) {
         
         <Container className="flight-result-footer">
             <Row>
-                <Col>
+                <Col xs={6} sm={6}>
                     Total Fare
                 </Col>
 
-                <Col>
-                    <button onClick={() => handleBook(setShow)}>Book Now</button>
+                <Col xs={6} sm={6} className="flight-result-book-btn">
+                    <button className="home-search-btn"onClick={() => handleBook(setShow)}>Book Now</button>
                 </Col>
             </Row>
         </Container>

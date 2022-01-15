@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const Flight = require('./models/Flight');
 const Booking = require('./models/Booking');
+const Airports = require('./models/Airports');
 const cookieParser = require('cookie-parser');
 var session = require('express-session')
 // const passport = require('passport');
@@ -67,6 +68,12 @@ app.post('/makeBooking', async (req, res) => {
 
 
 	res.json({ status: 'ok' });
+})
+
+app.get('/getAirports', async (req, res) => {
+  const response = await Airports.find({})
+
+  res.json(response);
 })
 
 

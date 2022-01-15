@@ -7,24 +7,30 @@ export default function FlightSearchDetailsComp() {
 
    
     return (
-        <Container>
+        <Container fluid className="flight-result-row-font">
             <Row>
-                <Col lg={4} sm={4} xs={12}>
-                    <h3>
-                        Date
-                    </h3>
+                <Col lg={3} sm={3} xs={12}>
+                    <p>
+                        15 Jan, Sunday
+                    </p>
                 </Col>
 
-                <Col lg={4} sm={4} xs={12}>
-                    <h3>
-                        Destinations
-                    </h3>
+                <Col lg={3} sm={3} xs={12}>
+                    <p>
+                        IXB {"=>"} DEL
+                    </p>
                 </Col>
 
-                <Col lg={4} sm={4} xs={12}>
-                    <h3>
-                        Passengers
-                    </h3>
+                <Col lg={3} sm={3} xs={12}>
+                    <p>
+                        2 Adults, 1 Child, 1 Senior Citizen
+                    </p>
+                </Col>
+
+                <Col lg={3} sm={3} xs={12}>
+                    <p>
+                        $5004 (per person)
+                    </p>
                 </Col>
 
                 

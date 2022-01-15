@@ -168,9 +168,10 @@ export default function FlightSearchDisplayComp() {
 
    
     return (
-        <Container>
+        <Container className="flight-result-border">
             {createResultCards()}
-            <FlightSearchFooterComp getSelection={getSelection}/>
+        <FlightSearchFooterComp getSelection={getSelection}/>
+            
         </Container>    
     );
   

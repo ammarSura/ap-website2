@@ -9,7 +9,7 @@ export default function BookingPaymentComp(props) {
     if ( props.card === 4) {
         return (
             <div>
-                <button onClick={()=> window.location.href="/"}>Redirect to payment portal</button>
+                <button className="home-search-btn"onClick={()=> window.location.href="/"}>Redirect to payment portal</button>
             </div>
             
              
